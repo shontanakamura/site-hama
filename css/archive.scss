@@ -1,0 +1,1000 @@
+@charset "UTF-8";
+
+$colorBlack: #080808;
+$colorBlue: #286BC1;
+$colorWhite: #FAFAFA;
+$colorGray: #F5F5F5;
+$colorGrayf: #ededed;
+$colorGrayd: #CCCCCC;
+$colorLyme: #72F4E4;
+
+@mixin Noto($fcolor: #333,$fontSize: 16px, $fontWeight: 700) {
+  color: $fcolor;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+@mixin Din($fcolor: #fff,$fontSize: 16px, $fontWeight: 700) {
+  color: $fcolor;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;;
+}
+
+@mixin Yugo($fcolor: #fff,$fontSize: 16px, $fontWeight: 700) {
+  color: $fcolor;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans CJK JP", "Yu Gothic", "游ゴシック", YuGothic,
+    "游ゴシック体", sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+p,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.6s ease;
+
+  &:hover {
+    transition: all 0.6s ease;
+    opacity: 0.6;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+
+main {
+
+  .news {
+    position: relative;
+    height: 240px;
+    background: $colorBlack;
+    &-img {
+      height: 240px;
+      display: block;
+      opacity: 0.8;
+      img {
+        height: 240px;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    &-txt {
+      position: absolute;
+      @include Din($colorWhite,32px,700);
+      top: 42%;
+      left: 32px;
+    }
+  }//news
+
+  .diary {
+    margin-top: 32px;
+    &-list {
+      
+      &-1 {
+        display: flex;
+        max-width: 311px;
+        height: 112px;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 49px;
+        .list1-img {
+          max-width: 102px;
+          height: 70px;
+          margin: auto 0;
+          margin-left: 16px;
+          margin-right: 11px;
+          img {
+            max-width: 102px;
+            height: 70px;
+          }
+          .bottom {
+            position: relative;
+          }
+          .bottom:before {
+            position: absolute;
+            top: 370%;
+            left: -40px;
+            display: block;
+            content: '';
+            background-color: $colorBlue;
+            height: 1px;
+            width: 158px;
+          }
+        }
+        .list1-content {
+          max-width: 182px;
+          position: relative;
+          display: inline-block;
+          margin-top: 6px;
+          .date {
+            @include Din($colorGrayd,10px,1000);
+          }
+          .more {
+            @include Din($colorBlack,14px,1000);
+            text-align: right;
+            display: block;
+          }
+          p {
+            @include Yugo($colorBlack,14px,700);
+            margin-bottom: 35px;
+          }
+          p a {
+            @include Yugo($colorBlack,14px,700);
+          }
+          .list1-content:before {
+            content: 'ああ';
+            position: absolute;
+            left: 2%;
+            top:70px;
+            z-index: 1000000;
+            bottom: 0px; /*下線の上下位置調整*/
+            display: block;
+            width: 20px; /*下線の幅*/
+            height: 10px; /*下線の太さ*/
+            background-color: $colorBlue; /*下線の色*/
+          }
+        }
+      }//diary-list-1
+
+      &-2 {
+        display: flex;
+        max-width: 311px;
+        height: 112px;
+        margin: 0 auto;
+        margin-bottom: 49px;
+        .list1-img {
+          max-width: 102px;
+          height: 70px;
+          margin: auto 0;
+          margin-left: 16px;
+          margin-right: 11px;
+          img {
+            max-width: 102px;
+            height: 70px;
+          }
+          .bottom {
+            position: relative;
+          }
+          .bottom:before {
+            position: absolute;
+            top: 370%;
+            left: -40px;
+            display: block;
+            content: '';
+            background-color: $colorBlue;
+            height: 1px;
+            width: 158px;
+          }
+        }
+        .list2-content {
+          max-width: 182px;
+          margin-top: 6px;
+          .date {
+            @include Din($colorGrayd,10px,1000);
+          }
+          .more {
+            @include Din($colorBlack,14px,1000);
+            text-align: right;
+            display: block;
+          }
+          p {
+            @include Yugo($colorBlack,14px,700);
+            margin-bottom: 35px;
+          }
+        }
+      }
+
+      &-3 {
+        display: flex;
+        max-width: 311px;
+        height: 112px;
+        margin: 0 auto;
+        margin-bottom: 49px;
+        .list3-img {
+          max-width: 102px;
+          height: 70px;
+          margin: auto 0;
+          margin-left: 16px;
+          margin-right: 11px;
+          img {
+            max-width: 102px;
+            height: 70px;
+          }
+          .bottom {
+            position: relative;
+          }
+          .bottom:before {
+            position: absolute;
+            top: 370%;
+            left: -40px;
+            display: block;
+            content: '';
+            background-color: $colorBlue;
+            height: 1px;
+            width: 158px;
+          }
+        }
+        .list3-content {
+          max-width: 182px;
+          margin-top: 6px;
+          .date {
+            @include Din($colorGrayd,10px,1000);
+          }
+          .more {
+            @include Din($colorBlack,14px,1000);
+            text-align: right;
+            display: block;
+          }
+          p {
+            @include Yugo($colorBlack,14px,700);
+            margin-bottom: 35px;
+          }
+
+        }
+      }
+
+      &-4 {
+        display: flex;
+        max-width: 311px;
+        height: 112px;
+        margin: 0 auto;
+        margin-bottom: 49px;
+        .list4-img {
+          max-width: 102px;
+          height: 70px;
+          margin: auto 0;
+          margin-left: 16px;
+          margin-right: 11px;
+          img {
+            max-width: 102px;
+            height: 70px;
+          }
+          .bottom {
+            position: relative;
+          }
+          .bottom:before {
+            position: absolute;
+            top: 370%;
+            left: -40px;
+            display: block;
+            content: '';
+            background-color: $colorBlue;
+            height: 1px;
+            width: 158px;
+          }
+        }
+        .list4-content {
+          margin-top: 6px;
+          max-width: 182px;
+          .date {
+            @include Din($colorGrayd,10px,1000);
+          }
+          .more {
+            @include Din($colorBlack,14px,1000);
+            text-align: right;
+            display: block;
+          }
+          p {
+            @include Yugo($colorBlack,14px,700);
+            margin-bottom: 35px;
+          }
+        }
+      }
+
+      &-5 {
+        display: flex;
+        max-width: 311px;
+        height: 112px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        .list5-img {
+          max-width: 102px;
+          height: 70px;
+          margin: auto 0;
+          margin-left: 16px;
+          margin-right: 11px;
+          img {
+            max-width: 102px;
+            height: 70px;
+          }
+          .bottom {
+            position: relative;
+          }
+          .bottom:before {
+            position: absolute;
+            top: 500%;
+            left: -40px;
+            display: block;
+            content: '';
+            background-color: $colorBlue;
+            height: 1px;
+            width: 158px;
+          }
+        }
+        .list5-content {
+          margin-top: 6px;
+          max-width: 182px;
+          .date {
+            @include Din($colorGrayd,10px,1000);
+          }
+          .more {
+            @include Din($colorBlack,14px,1000);
+            text-align: right;
+            display: block;
+          }
+          p {
+            @include Yugo($colorBlack,14px,700);
+            margin-bottom: 35px;
+          }
+        }
+      }
+
+
+      &-6 {
+        display: flex;
+        max-width: 311px;
+        height: 112px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        .list6-img {
+          max-width: 102px;
+          height: 70px;
+          margin: auto 0;
+          margin-left: 16px;
+          margin-right: 11px;
+          img {
+            max-width: 102px;
+            height: 70px;
+          }
+          .bottom {
+            position: relative;
+          }
+          .bottom:before {
+            position: absolute;
+            top: 500%;
+            left: -40px;
+            display: block;
+            content: '';
+            background-color: $colorBlue;
+            height: 1px;
+            width: 158px;
+          }
+        }
+        .list6-content {
+          margin-top: 6px;
+          max-width: 182px;
+          .date {
+            @include Din($colorGrayd,10px,1000);
+          }
+          .more {
+            @include Din($colorBlack,14px,1000);
+            text-align: right;
+            display: block;
+          }
+          p {
+            @include Yugo($colorBlack,14px,700);
+            margin-bottom: 35px;
+          }
+        }
+      }
+      
+    }//diary-list
+  }//diary
+
+  .page {
+    &-group {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      .pagination {
+        clear: both;
+        padding: 20px 0;
+        position: relative;
+        font-size: 14px;
+        line-height: 14px;
+              text-align: center;
+      }
+      .pagination-box {
+        display: inline-block;
+      }
+      .pagination span, .pagination a {
+        display: block;
+        float: left;
+        margin: 2px 2px 2px 0;
+        padding: 10px 15px 10px 15px;
+        text-decoration: none;
+        width: auto;
+        color: #fff; /* 通常の文字色 */
+        background: #47BEA0; /* 通常の背景色 */
+      }
+      .pagination a:hover{
+        color: #47BEA0; /* マウスホバー時の文字色 */
+        background: #F9D635; /* マウスホバー時の背景色 */
+      }
+      .pagination .current{
+        padding: 10px 15px 10px 15px;
+        color: #47BEA0; /* 現在のページの文字色 */
+              background: #F9D635; /* 現在のページの背景色 */
+      }
+      @media only screen and (max-width: 413px) {
+      .pagination {
+        font-size: 12px;
+        line-height: 12px;
+      }
+      .pagination span, .pagination a {
+        padding: 8px 10px 8px 10px;
+      }
+      .pagination .current{
+        padding: 8px 10px 8px 10px;
+      }
+      }
+      
+      .pagenation {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        li {
+          display: inline;
+        }
+        a {
+          @include Yugo($colorBlack,14px,700);
+          float: left;
+          padding: 10px;
+          text-decoration: none;
+          transition: background-color .3s;
+          border: 2px solid $colorBlack;
+          margin-right: 8px;
+        }
+      a.active {
+        background-color: $colorBlue;
+        color: white;
+        border: 1px solid #4CAF50;
+        }
+      }
+    }
+  }//page
+}//main
+
+
+//------------------TABレスポンシブ--------------//
+
+@media screen and(min-width: 768px) {
+
+  main {
+    .news {
+      position: relative;
+      height: 432px;
+      &-img {
+        height: 432px;
+        img {
+          height: 432px;
+          opacity: 0.8;
+        }
+      }
+      &-txt {
+        position: absolute;
+        @include Din($colorWhite,40px,700);
+      }
+    }//news
+  
+    .diary {
+      margin-top: 32px;
+      &-list {
+        flex-wrap: wrap;
+        display: flex;
+        margin: 0 64px;
+        &-1 {
+          display: flex;
+          width: calc(100% / 3);
+          margin: 0;
+          position: relative;
+          margin-bottom: 30px;
+          .list1-content {
+            max-width: 182px;
+          }
+        }//diary-list-1
+  
+        &-2 {
+          display: flex;
+          margin: 0;
+          margin-bottom: 49px;
+          .list2-content {
+            max-width: 182px;
+          }
+        }
+  
+        &-3 {
+          display: flex;
+          max-width: 311px;
+          height: 112px;
+          margin: 0;
+          margin-bottom: 49px;
+
+          .list3-content {
+            max-width: 182px;
+          }
+        }
+  
+        &-4 {
+          display: flex;
+          max-width: 311px;
+          height: 112px;
+          margin: 0;
+          margin-bottom: 49px;
+          .list4-content {
+            max-width: 182px;
+          }
+        }
+  
+        &-5 {
+          display: flex;
+          max-width: 311px;
+          height: 112px;
+          margin: 0;
+          margin-bottom: 80px;
+          .list5-content {
+            max-width: 182px;
+          }
+          .list5-img {
+            .bottom:before {
+              position: absolute;
+              top: 380%;
+              left: -40px;
+              display: block;
+              content: '';
+              background-color: $colorBlue;
+              height: 1px;
+              width: 158px;
+            }
+          }
+        }
+
+        &-6 {
+          display: flex;
+          max-width: 311px;
+          height: 112px;
+          margin: 0;
+          margin-bottom: 80px;
+          .list6-content {
+            max-width: 182px;
+          }
+          .list6-img {
+            .bottom:before {
+              position: absolute;
+              top: 380%;
+              left: -40px;
+              display: block;
+              content: '';
+              background-color: $colorBlue;
+              height: 1px;
+              width: 158px;
+            }
+          }
+        }
+        
+      }//diary-list
+    }//diary
+  
+    .page {
+      &-group {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        .pagenation {
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+          li {
+            display: inline;
+          }
+          a {
+            @include Yugo($colorBlack,14px,700);
+            float: left;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 2px solid $colorBlack;
+            margin-right: 8px;
+          }
+        a.active {
+          background-color: $colorBlue;
+          color: white;
+          border: 1px solid #4CAF50;
+          }
+        }
+      }
+    }//page
+  }//main
+
+}
+
+//------------------TABレスポンシブ--------------//
+
+
+//------------------PCレスポンシブ--------------//
+
+@media screen and(min-width: 1280px) {
+
+  main {
+    .news {
+      position: relative;
+      height: 1080px;
+      &-img {
+        height: 1080px;
+        background: #000;
+        img {
+          height: 1080px;
+          object-fit: cover;
+          background-size: cover;
+          background-position: center;
+          display: block;
+          opacity: 0.8;
+        }
+      }
+      &-txt {
+        max-width: 95px;
+        position: absolute;
+        @include Din($colorWhite,64px,700);
+        top: 42%;
+        left: 75px;
+      }
+    }//news
+  
+    .diary {
+      margin-top: 80px;
+      &-list {
+        flex-wrap: wrap;
+        display: flex;
+        margin: 0 auto;
+        max-width: 1080px;
+        height: 395px;
+        &-1 {
+          display: flex;
+          max-width: 311px;
+          height: 112px;
+          margin: 0;
+          position: relative;
+          margin-bottom: 49px;
+          .list1-img {
+            max-width: 102px;
+            height: 70px;
+            margin: auto 0;
+            margin-left: 16px;
+            margin-right: 11px;
+            img {
+              max-width: 102px;
+              height: 70px;
+            }
+            .bottom {
+              position: relative;
+            }
+            .bottom:before {
+              position: absolute;
+              top: 370%;
+              left: -40px;
+              display: block;
+              content: '';
+              background-color: $colorBlue;
+              height: 1px;
+              width: 158px;
+            }
+          }
+          .list1-content {
+            max-width: 182px;
+            position: relative;
+            display: inline-block;
+            .date {
+              @include Din($colorGrayd,10px,1000);
+            }
+            .more {
+              @include Din($colorBlack,14px,1000);
+              text-align: right;
+              display: block;
+            }
+            p {
+              @include Yugo($colorBlack,14px,700);
+              margin-bottom: 35px;
+            }
+            .list1-content:before {
+              content: 'ああ';
+              position: absolute;
+              left: 2%;
+              top:70px;
+              z-index: 1000000;
+              bottom: 0px; /*下線の上下位置調整*/
+              display: block;
+              width: 20px; /*下線の幅*/
+              height: 10px; /*下線の太さ*/
+              background-color: $colorBlue; /*下線の色*/
+            }
+          }
+        }//diary-list-1
+  
+        &-2 {
+          display: flex;
+          max-width: 311px;
+          height: 112px;
+          margin: 0;
+          margin-bottom: 49px;
+          .list1-img {
+            max-width: 102px;
+            height: 70px;
+            margin: auto 0;
+            margin-left: 16px;
+            margin-right: 11px;
+            img {
+              max-width: 102px;
+              height: 70px;
+            }
+            .bottom {
+              position: relative;
+            }
+            .bottom:before {
+              position: absolute;
+              top: 370%;
+              left: -40px;
+              display: block;
+              content: '';
+              background-color: $colorBlue;
+              height: 1px;
+              width: 158px;
+            }
+          }
+          .list2-content {
+            max-width: 182px;
+            .date {
+              @include Din($colorGrayd,10px,1000);
+            }
+            .more {
+              @include Din($colorBlack,14px,1000);
+              text-align: right;
+              display: block;
+            }
+            p {
+              @include Yugo($colorBlack,14px,700);
+              margin-bottom: 35px;
+            }
+          }
+        }
+  
+        &-3 {
+          display: flex;
+          max-width: 311px;
+          height: 112px;
+          margin: 0;
+          margin-bottom: 49px;
+          .list3-img {
+            max-width: 102px;
+            height: 70px;
+            margin: auto 0;
+            margin-left: 16px;
+            margin-right: 11px;
+            img {
+              max-width: 102px;
+              height: 70px;
+            }
+            .bottom {
+              position: relative;
+            }
+            .bottom:before {
+              position: absolute;
+              top: 370%;
+              left: -40px;
+              display: block;
+              content: '';
+              background-color: $colorBlue;
+              height: 1px;
+              width: 158px;
+            }
+          }
+          .list3-content {
+            max-width: 182px;
+            .date {
+              @include Din($colorGrayd,10px,1000);
+            }
+            .more {
+              @include Din($colorBlack,14px,1000);
+              text-align: right;
+              display: block;
+            }
+            p {
+              @include Yugo($colorBlack,14px,700);
+              margin-bottom: 35px;
+            }
+  
+          }
+        }
+  
+        &-4 {
+          display: flex;
+          max-width: 311px;
+          height: 112px;
+          margin: 0;
+          margin-bottom: 49px;
+          .list4-img {
+            max-width: 102px;
+            height: 70px;
+            margin: auto 0;
+            margin-left: 16px;
+            margin-right: 11px;
+            img {
+              max-width: 102px;
+              height: 70px;
+            }
+            .bottom {
+              position: relative;
+            }
+            .bottom:before {
+              position: absolute;
+              top: 370%;
+              left: -40px;
+              display: block;
+              content: '';
+              background-color: $colorBlue;
+              height: 1px;
+              width: 158px;
+            }
+          }
+          .list4-content {
+            max-width: 182px;
+            .date {
+              @include Din($colorGrayd,10px,1000);
+            }
+            .more {
+              @include Din($colorBlack,14px,1000);
+              text-align: right;
+              display: block;
+            }
+            p {
+              @include Yugo($colorBlack,14px,700);
+              margin-bottom: 35px;
+            }
+          }
+        }
+  
+        &-5 {
+          display: flex;
+          max-width: 311px;
+          height: 112px;
+          margin: 0;
+          margin-bottom: 80px;
+          .list5-img {
+            max-width: 102px;
+            height: 70px;
+            margin: auto 0;
+            margin-left: 16px;
+            margin-right: 11px;
+            img {
+              max-width: 102px;
+              height: 70px;
+            }
+            .bottom {
+              position: relative;
+            }
+            .bottom:before {
+              position: absolute;
+              top: 370%;
+              left: -40px;
+              display: block;
+              content: '';
+              background-color: $colorBlue;
+              height: 1px;
+              width: 158px;
+            }
+          }
+          .list5-content {
+            max-width: 182px;
+            .date {
+              @include Din($colorGrayd,10px,1000);
+            }
+            .more {
+              @include Din($colorBlack,14px,1000);
+              text-align: right;
+              display: block;
+            }
+            p {
+              @include Yugo($colorBlack,14px,700);
+              margin-bottom: 35px;
+            }
+          }
+        }
+  
+        
+      }//diary-list
+    }//diary
+  
+    .page {
+      &-group {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        .pagenation {
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+          li {
+            display: inline;
+          }
+          a {
+            @include Yugo($colorBlack,14px,700);
+            float: left;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 2px solid $colorBlack;
+            margin-right: 8px;
+          }
+        a.active {
+          background-color: $colorBlue;
+          color: white;
+          border: 1px solid #4CAF50;
+          }
+        }
+      }
+    }//page
+  }//main
+
+}

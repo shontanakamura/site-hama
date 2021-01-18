@@ -1,0 +1,1235 @@
+@charset "UTF-8";
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans CJK JP", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+a:hover {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  opacity: 0.6;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+main .news {
+  position: relative;
+  height: 240px;
+  background: #080808;
+}
+
+main .news-img {
+  height: 240px;
+  display: block;
+  opacity: 0.8;
+}
+
+main .news-img img {
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+main .news-txt {
+  position: absolute;
+  color: #FAFAFA;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+  top: 42%;
+  left: 32px;
+}
+
+main .diary {
+  margin-top: 32px;
+}
+
+main .diary-list-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 311px;
+  height: 112px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 49px;
+}
+
+main .diary-list-1 .list1-img {
+  max-width: 102px;
+  height: 70px;
+  margin: auto 0;
+  margin-left: 16px;
+  margin-right: 11px;
+}
+
+main .diary-list-1 .list1-img img {
+  max-width: 102px;
+  height: 70px;
+}
+
+main .diary-list-1 .list1-img .bottom {
+  position: relative;
+}
+
+main .diary-list-1 .list1-img .bottom:before {
+  position: absolute;
+  top: 370%;
+  left: -40px;
+  display: block;
+  content: '';
+  background-color: #286BC1;
+  height: 1px;
+  width: 158px;
+}
+
+main .diary-list-1 .list1-content {
+  max-width: 182px;
+  position: relative;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+main .diary-list-1 .list1-content .date {
+  color: #CCCCCC;
+  font-size: 10px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .diary-list-1 .list1-content .more {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+  text-align: right;
+  display: block;
+}
+
+main .diary-list-1 .list1-content p {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  margin-bottom: 35px;
+}
+
+main .diary-list-1 .list1-content p a {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+main .diary-list-1 .list1-content .list1-content:before {
+  content: 'ああ';
+  position: absolute;
+  left: 2%;
+  top: 70px;
+  z-index: 1000000;
+  bottom: 0px;
+  /*下線の上下位置調整*/
+  display: block;
+  width: 20px;
+  /*下線の幅*/
+  height: 10px;
+  /*下線の太さ*/
+  background-color: #286BC1;
+  /*下線の色*/
+}
+
+main .diary-list-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 311px;
+  height: 112px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+}
+
+main .diary-list-2 .list1-img {
+  max-width: 102px;
+  height: 70px;
+  margin: auto 0;
+  margin-left: 16px;
+  margin-right: 11px;
+}
+
+main .diary-list-2 .list1-img img {
+  max-width: 102px;
+  height: 70px;
+}
+
+main .diary-list-2 .list1-img .bottom {
+  position: relative;
+}
+
+main .diary-list-2 .list1-img .bottom:before {
+  position: absolute;
+  top: 370%;
+  left: -40px;
+  display: block;
+  content: '';
+  background-color: #286BC1;
+  height: 1px;
+  width: 158px;
+}
+
+main .diary-list-2 .list2-content {
+  max-width: 182px;
+  margin-top: 6px;
+}
+
+main .diary-list-2 .list2-content .date {
+  color: #CCCCCC;
+  font-size: 10px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .diary-list-2 .list2-content .more {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+  text-align: right;
+  display: block;
+}
+
+main .diary-list-2 .list2-content p {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  margin-bottom: 35px;
+}
+
+main .diary-list-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 311px;
+  height: 112px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+}
+
+main .diary-list-3 .list3-img {
+  max-width: 102px;
+  height: 70px;
+  margin: auto 0;
+  margin-left: 16px;
+  margin-right: 11px;
+}
+
+main .diary-list-3 .list3-img img {
+  max-width: 102px;
+  height: 70px;
+}
+
+main .diary-list-3 .list3-img .bottom {
+  position: relative;
+}
+
+main .diary-list-3 .list3-img .bottom:before {
+  position: absolute;
+  top: 370%;
+  left: -40px;
+  display: block;
+  content: '';
+  background-color: #286BC1;
+  height: 1px;
+  width: 158px;
+}
+
+main .diary-list-3 .list3-content {
+  max-width: 182px;
+  margin-top: 6px;
+}
+
+main .diary-list-3 .list3-content .date {
+  color: #CCCCCC;
+  font-size: 10px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .diary-list-3 .list3-content .more {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+  text-align: right;
+  display: block;
+}
+
+main .diary-list-3 .list3-content p {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  margin-bottom: 35px;
+}
+
+main .diary-list-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 311px;
+  height: 112px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+}
+
+main .diary-list-4 .list4-img {
+  max-width: 102px;
+  height: 70px;
+  margin: auto 0;
+  margin-left: 16px;
+  margin-right: 11px;
+}
+
+main .diary-list-4 .list4-img img {
+  max-width: 102px;
+  height: 70px;
+}
+
+main .diary-list-4 .list4-img .bottom {
+  position: relative;
+}
+
+main .diary-list-4 .list4-img .bottom:before {
+  position: absolute;
+  top: 370%;
+  left: -40px;
+  display: block;
+  content: '';
+  background-color: #286BC1;
+  height: 1px;
+  width: 158px;
+}
+
+main .diary-list-4 .list4-content {
+  margin-top: 6px;
+  max-width: 182px;
+}
+
+main .diary-list-4 .list4-content .date {
+  color: #CCCCCC;
+  font-size: 10px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .diary-list-4 .list4-content .more {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+  text-align: right;
+  display: block;
+}
+
+main .diary-list-4 .list4-content p {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  margin-bottom: 35px;
+}
+
+main .diary-list-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 311px;
+  height: 112px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+main .diary-list-5 .list5-img {
+  max-width: 102px;
+  height: 70px;
+  margin: auto 0;
+  margin-left: 16px;
+  margin-right: 11px;
+}
+
+main .diary-list-5 .list5-img img {
+  max-width: 102px;
+  height: 70px;
+}
+
+main .diary-list-5 .list5-img .bottom {
+  position: relative;
+}
+
+main .diary-list-5 .list5-img .bottom:before {
+  position: absolute;
+  top: 500%;
+  left: -40px;
+  display: block;
+  content: '';
+  background-color: #286BC1;
+  height: 1px;
+  width: 158px;
+}
+
+main .diary-list-5 .list5-content {
+  margin-top: 6px;
+  max-width: 182px;
+}
+
+main .diary-list-5 .list5-content .date {
+  color: #CCCCCC;
+  font-size: 10px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .diary-list-5 .list5-content .more {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+  text-align: right;
+  display: block;
+}
+
+main .diary-list-5 .list5-content p {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  margin-bottom: 35px;
+}
+
+main .diary-list-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 311px;
+  height: 112px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+main .diary-list-6 .list6-img {
+  max-width: 102px;
+  height: 70px;
+  margin: auto 0;
+  margin-left: 16px;
+  margin-right: 11px;
+}
+
+main .diary-list-6 .list6-img img {
+  max-width: 102px;
+  height: 70px;
+}
+
+main .diary-list-6 .list6-img .bottom {
+  position: relative;
+}
+
+main .diary-list-6 .list6-img .bottom:before {
+  position: absolute;
+  top: 500%;
+  left: -40px;
+  display: block;
+  content: '';
+  background-color: #286BC1;
+  height: 1px;
+  width: 158px;
+}
+
+main .diary-list-6 .list6-content {
+  margin-top: 6px;
+  max-width: 182px;
+}
+
+main .diary-list-6 .list6-content .date {
+  color: #CCCCCC;
+  font-size: 10px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .diary-list-6 .list6-content .more {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+  text-align: right;
+  display: block;
+}
+
+main .diary-list-6 .list6-content p {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  margin-bottom: 35px;
+}
+
+main .page-group {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .page-group .pagination {
+  clear: both;
+  padding: 20px 0;
+  position: relative;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+main .page-group .pagination-box {
+  display: inline-block;
+}
+
+main .page-group .pagination span, main .page-group .pagination a {
+  display: block;
+  float: left;
+  margin: 2px 2px 2px 0;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  width: auto;
+  color: #fff;
+  /* 通常の文字色 */
+  background: #47BEA0;
+  /* 通常の背景色 */
+}
+
+main .page-group .pagination a:hover {
+  color: #47BEA0;
+  /* マウスホバー時の文字色 */
+  background: #F9D635;
+  /* マウスホバー時の背景色 */
+}
+
+main .page-group .pagination .current {
+  padding: 10px 15px 10px 15px;
+  color: #47BEA0;
+  /* 現在のページの文字色 */
+  background: #F9D635;
+  /* 現在のページの背景色 */
+}
+
+@media only screen and (max-width: 413px) {
+  main .page-group .pagination {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  main .page-group .pagination span, main .page-group .pagination a {
+    padding: 8px 10px 8px 10px;
+  }
+  main .page-group .pagination .current {
+    padding: 8px 10px 8px 10px;
+  }
+}
+
+main .page-group .pagenation {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+main .page-group .pagenation li {
+  display: inline;
+}
+
+main .page-group .pagenation a {
+  color: #080808;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  float: left;
+  padding: 10px;
+  text-decoration: none;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  border: 2px solid #080808;
+  margin-right: 8px;
+}
+
+main .page-group .pagenation a.active {
+  background-color: #286BC1;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+@media screen and (min-width: 768px) {
+  main .news {
+    position: relative;
+    height: 432px;
+  }
+  main .news-img {
+    height: 432px;
+  }
+  main .news-img img {
+    height: 432px;
+    opacity: 0.8;
+  }
+  main .news-txt {
+    position: absolute;
+    color: #FAFAFA;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .diary {
+    margin-top: 32px;
+  }
+  main .diary-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 64px;
+  }
+  main .diary-list-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(100% / 3);
+    margin: 0;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  main .diary-list-1 .list1-content {
+    max-width: 182px;
+  }
+  main .diary-list-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+  main .diary-list-2 .list2-content {
+    max-width: 182px;
+  }
+  main .diary-list-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 311px;
+    height: 112px;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+  main .diary-list-3 .list3-content {
+    max-width: 182px;
+  }
+  main .diary-list-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 311px;
+    height: 112px;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+  main .diary-list-4 .list4-content {
+    max-width: 182px;
+  }
+  main .diary-list-5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 311px;
+    height: 112px;
+    margin: 0;
+    margin-bottom: 80px;
+  }
+  main .diary-list-5 .list5-content {
+    max-width: 182px;
+  }
+  main .diary-list-5 .list5-img .bottom:before {
+    position: absolute;
+    top: 380%;
+    left: -40px;
+    display: block;
+    content: '';
+    background-color: #286BC1;
+    height: 1px;
+    width: 158px;
+  }
+  main .diary-list-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 311px;
+    height: 112px;
+    margin: 0;
+    margin-bottom: 80px;
+  }
+  main .diary-list-6 .list6-content {
+    max-width: 182px;
+  }
+  main .diary-list-6 .list6-img .bottom:before {
+    position: absolute;
+    top: 380%;
+    left: -40px;
+    display: block;
+    content: '';
+    background-color: #286BC1;
+    height: 1px;
+    width: 158px;
+  }
+  main .page-group {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  main .page-group .pagenation {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+  main .page-group .pagenation li {
+    display: inline;
+  }
+  main .page-group .pagenation a {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border: 2px solid #080808;
+    margin-right: 8px;
+  }
+  main .page-group .pagenation a.active {
+    background-color: #286BC1;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main .news {
+    position: relative;
+    height: 1080px;
+  }
+  main .news-img {
+    height: 1080px;
+    background: #000;
+  }
+  main .news-img img {
+    height: 1080px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    opacity: 0.8;
+  }
+  main .news-txt {
+    max-width: 95px;
+    position: absolute;
+    color: #FAFAFA;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    top: 42%;
+    left: 75px;
+  }
+  main .diary {
+    margin-top: 80px;
+  }
+  main .diary-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1080px;
+    height: 395px;
+  }
+  main .diary-list-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 311px;
+    height: 112px;
+    margin: 0;
+    position: relative;
+    margin-bottom: 49px;
+  }
+  main .diary-list-1 .list1-img {
+    max-width: 102px;
+    height: 70px;
+    margin: auto 0;
+    margin-left: 16px;
+    margin-right: 11px;
+  }
+  main .diary-list-1 .list1-img img {
+    max-width: 102px;
+    height: 70px;
+  }
+  main .diary-list-1 .list1-img .bottom {
+    position: relative;
+  }
+  main .diary-list-1 .list1-img .bottom:before {
+    position: absolute;
+    top: 370%;
+    left: -40px;
+    display: block;
+    content: '';
+    background-color: #286BC1;
+    height: 1px;
+    width: 158px;
+  }
+  main .diary-list-1 .list1-content {
+    max-width: 182px;
+    position: relative;
+    display: inline-block;
+  }
+  main .diary-list-1 .list1-content .date {
+    color: #CCCCCC;
+    font-size: 10px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .diary-list-1 .list1-content .more {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    text-align: right;
+    display: block;
+  }
+  main .diary-list-1 .list1-content p {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    margin-bottom: 35px;
+  }
+  main .diary-list-1 .list1-content .list1-content:before {
+    content: 'ああ';
+    position: absolute;
+    left: 2%;
+    top: 70px;
+    z-index: 1000000;
+    bottom: 0px;
+    /*下線の上下位置調整*/
+    display: block;
+    width: 20px;
+    /*下線の幅*/
+    height: 10px;
+    /*下線の太さ*/
+    background-color: #286BC1;
+    /*下線の色*/
+  }
+  main .diary-list-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 311px;
+    height: 112px;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+  main .diary-list-2 .list1-img {
+    max-width: 102px;
+    height: 70px;
+    margin: auto 0;
+    margin-left: 16px;
+    margin-right: 11px;
+  }
+  main .diary-list-2 .list1-img img {
+    max-width: 102px;
+    height: 70px;
+  }
+  main .diary-list-2 .list1-img .bottom {
+    position: relative;
+  }
+  main .diary-list-2 .list1-img .bottom:before {
+    position: absolute;
+    top: 370%;
+    left: -40px;
+    display: block;
+    content: '';
+    background-color: #286BC1;
+    height: 1px;
+    width: 158px;
+  }
+  main .diary-list-2 .list2-content {
+    max-width: 182px;
+  }
+  main .diary-list-2 .list2-content .date {
+    color: #CCCCCC;
+    font-size: 10px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .diary-list-2 .list2-content .more {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    text-align: right;
+    display: block;
+  }
+  main .diary-list-2 .list2-content p {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    margin-bottom: 35px;
+  }
+  main .diary-list-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 311px;
+    height: 112px;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+  main .diary-list-3 .list3-img {
+    max-width: 102px;
+    height: 70px;
+    margin: auto 0;
+    margin-left: 16px;
+    margin-right: 11px;
+  }
+  main .diary-list-3 .list3-img img {
+    max-width: 102px;
+    height: 70px;
+  }
+  main .diary-list-3 .list3-img .bottom {
+    position: relative;
+  }
+  main .diary-list-3 .list3-img .bottom:before {
+    position: absolute;
+    top: 370%;
+    left: -40px;
+    display: block;
+    content: '';
+    background-color: #286BC1;
+    height: 1px;
+    width: 158px;
+  }
+  main .diary-list-3 .list3-content {
+    max-width: 182px;
+  }
+  main .diary-list-3 .list3-content .date {
+    color: #CCCCCC;
+    font-size: 10px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .diary-list-3 .list3-content .more {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    text-align: right;
+    display: block;
+  }
+  main .diary-list-3 .list3-content p {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    margin-bottom: 35px;
+  }
+  main .diary-list-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 311px;
+    height: 112px;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+  main .diary-list-4 .list4-img {
+    max-width: 102px;
+    height: 70px;
+    margin: auto 0;
+    margin-left: 16px;
+    margin-right: 11px;
+  }
+  main .diary-list-4 .list4-img img {
+    max-width: 102px;
+    height: 70px;
+  }
+  main .diary-list-4 .list4-img .bottom {
+    position: relative;
+  }
+  main .diary-list-4 .list4-img .bottom:before {
+    position: absolute;
+    top: 370%;
+    left: -40px;
+    display: block;
+    content: '';
+    background-color: #286BC1;
+    height: 1px;
+    width: 158px;
+  }
+  main .diary-list-4 .list4-content {
+    max-width: 182px;
+  }
+  main .diary-list-4 .list4-content .date {
+    color: #CCCCCC;
+    font-size: 10px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .diary-list-4 .list4-content .more {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    text-align: right;
+    display: block;
+  }
+  main .diary-list-4 .list4-content p {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    margin-bottom: 35px;
+  }
+  main .diary-list-5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 311px;
+    height: 112px;
+    margin: 0;
+    margin-bottom: 80px;
+  }
+  main .diary-list-5 .list5-img {
+    max-width: 102px;
+    height: 70px;
+    margin: auto 0;
+    margin-left: 16px;
+    margin-right: 11px;
+  }
+  main .diary-list-5 .list5-img img {
+    max-width: 102px;
+    height: 70px;
+  }
+  main .diary-list-5 .list5-img .bottom {
+    position: relative;
+  }
+  main .diary-list-5 .list5-img .bottom:before {
+    position: absolute;
+    top: 370%;
+    left: -40px;
+    display: block;
+    content: '';
+    background-color: #286BC1;
+    height: 1px;
+    width: 158px;
+  }
+  main .diary-list-5 .list5-content {
+    max-width: 182px;
+  }
+  main .diary-list-5 .list5-content .date {
+    color: #CCCCCC;
+    font-size: 10px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .diary-list-5 .list5-content .more {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    text-align: right;
+    display: block;
+  }
+  main .diary-list-5 .list5-content p {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    margin-bottom: 35px;
+  }
+  main .page-group {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  main .page-group .pagenation {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+  main .page-group .pagenation li {
+    display: inline;
+  }
+  main .page-group .pagenation a {
+    color: #080808;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border: 2px solid #080808;
+    margin-right: 8px;
+  }
+  main .page-group .pagenation a.active {
+    background-color: #286BC1;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+}
+/*# sourceMappingURL=archive.css.map */

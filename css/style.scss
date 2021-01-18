@@ -1,0 +1,1704 @@
+@charset "UTF-8";
+
+$colorBlack: #080808;
+$colorBlue: #286BC1;
+$colorWhite: #FAFAFA;
+$colorGray: #F5F5F5;
+$colorGrayf: #ededed;
+$colorGrayd: #CCCCCC;
+$colorLyme: #72F4E4;
+
+@mixin Din($fcolor: #fff,$fontSize: 16px, $fontWeight: 700) {
+  color: $fcolor;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;;
+}
+
+@mixin Yugo($fcolor: #fff,$fontSize: 16px, $fontWeight: 700) {
+  color: $fcolor;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans CJK JP", "Yu Gothic", "游ゴシック", YuGothic,
+    "游ゴシック体", sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+p,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.6s ease;
+
+  &:hover {
+    transition: all 0.6s ease;
+    opacity: 0.6;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+nav ul li a{
+  @include Yugo($colorWhite,14px,700);
+}
+
+//------------------スマホレスポンシブ  対応-----------------------------*
+
+/* ここからheader */
+header {
+
+  .nav {
+    // position: fixed;
+    height: 40px;
+    background-color: #8B96B6;
+    &__icon {
+      display: inline-block;
+      margin-left: 16px;
+      .icon {
+        width: 42px;
+        height: 40px;
+      }
+    }
+    .link {
+      display: flex;
+      list-style: none;
+      width: 50%;
+      height: 100%;
+      background-color: #8B96B6;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: auto;
+      z-index: 2;
+      margin-top: -10px;
+      li a {
+        color: $colorWhite;
+        text-decoration: none;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+main {
+  .mainVisual {
+    height: 100%;
+    .swiper-container{
+      height: 80%;
+      position: relative;
+      .swiper-wrapper {
+        .swiper-slide {
+          margin-bottom: -10px;
+        }
+        .swiper-slide > img{
+          width: 100%;
+          height: 659px;
+          background-size: cover;
+          background-position: center;
+          object-fit: cover;
+        }
+      }//swiper-wrapper
+      .main-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: 360px;
+        max-width: 300px;
+        height: 150px;
+        z-index: 1;
+      }
+    }//swiper-container
+
+    .news {
+      width: 100%;
+      height: 220px;
+      background-color: $colorBlue;
+      padding: 24.4px 32px 32px 32px;
+      // margin: 0 32px;
+      &__title {
+  
+        &-top {
+          max-width: 123px;
+          margin-bottom: 23px;
+          p {
+            @include Din($colorWhite,16,700)
+          }
+          a {
+            @include Din($colorWhite,16,700)
+          }
+        } 
+        &-content {
+          max-width: 307px;
+          display: inline;
+          span {
+            @include Din($colorGrayd,12px,700);
+            padding-right: 8px;
+          }
+          a { 
+            @include Yugo($colorWhite,16px,700);
+            // padding-left: 16px;
+            white-space: nowrap;
+          }
+        }
+        &-content a:nth-child(2) {
+          white-space: nowrap;
+        }
+      }
+  
+      &__view {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 26px;
+        a {
+          @include Din($colorBlue,16px,700);
+          line-height: 40px;
+        }
+        .newsText {
+          max-width: 140px;
+          height: 40px;
+          margin: 0 auto;
+          background-color: $colorWhite;
+        }
+      }
+    }
+  }//mainVisual
+
+
+
+  .services {
+    &__top {
+      height: 261px;
+      margin: 0 32px;
+      &__title {
+        max-width: 200px;
+        height: 82px;
+        text-align: center;
+        // margin-left: 32px;
+      }
+      &__title h2 {
+        @include Din($colorBlue,16px,700);
+        padding-top: 34px;
+        padding-bottom: 34px;
+        text-align: left;
+      }
+      &__explanation {
+        // margin: 0 32px;
+        max-width: 312px;
+      }
+      &__explanation p:first-child {
+        text-align: left;
+        @include Yugo($colorBlack,24px,700);
+        word-break: keep-all;
+      }
+      &__explanation p:last-child {
+        text-align: left;
+        @include Yugo($colorBlack,24px,700);
+      }
+    }
+    &__content {
+      height: 343px;
+      background-color: $colorBlue;
+      position: relative;
+      &__img {
+        height: 100x;
+        .bridge {
+          max-width: 212px;
+          max-height: 141px;
+          position: absolute;
+          left: 132px;
+          top: -42px
+        }
+      }
+      &__text {
+        padding-top: 95px;
+        @include Yugo($colorWhite,16px,0);
+        margin: 0 32px;
+      }
+      &__text p:first-child {
+        // padding: 10px 35px 32px 36px ;
+        margin-top: 10px;
+        margin-bottom: 32px;
+      }
+      // &__text p:last-child {
+      //   // padding: 0 35px 0 36px ;
+      // }
+    }
+    &-img img {
+      display: none;
+    }
+  }//services
+  
+  .group {
+
+    &__name {
+      max-width: 200px;
+      margin-left: 32px;
+      text-align: center;
+    }
+    &__name h2 {
+      padding-top: 21px;
+      padding-bottom: 32px;
+      @include Din($colorBlue,16px,700);
+    }
+  
+    &__message1 p {
+      margin: 0 32px;
+      max-width: 312px;
+      @include Yugo($colorBlack,24px,700);
+      margin-bottom: 32px;
+      letter-spacing: 0;
+      
+    }
+  
+    &__message2 {
+      margin: 0 32px;
+      max-width: 312px;
+
+    }
+  
+    &__message2 p {
+      @include Yugo($colorBlack,16px,0);
+      margin-bottom: 32px;
+      letter-spacing: 0;
+    }
+  
+    &__image {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: auto 30px;
+      margin-bottom: 32px;
+      &__civil {
+        background-color: $colorBlue;
+        display: inline-block; 
+        position: relative;
+        width: calc(50% - 0.5rem);
+        .civil{
+          opacity: 0.4;
+          display: block;
+          &__text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            @include Din(#FAFAFA,24px,700);
+          }
+        }
+      }
+  
+      &__bridge {
+        background-color: $colorBlue;
+        display: inline-block; 
+        position: relative;
+        width: calc(50% - 0.5rem);
+        .bridge {
+          opacity: 0.4;
+          display: block;
+          &__text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            @include Din($colorWhite,24px,700);
+          }
+        }
+      }
+    
+      &__load {
+        background-color: $colorBlue;
+        display: inline-block; 
+        position: relative;
+        width: calc(50% - 0.5rem);
+        margin-top: 22px;
+        .load {
+          opacity: 0.4;
+          display: block;
+          &__text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            @include Din($colorWhite,24px,700);
+          }
+        }
+      }
+  
+      &__dum {
+        background-color: $colorBlue;
+        display: inline-block; 
+        position: relative;
+        width: calc(50% - 0.5rem);
+        margin-top: 22px;
+        .dum {
+          opacity: 0.4;
+          display: block;
+          &__text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            @include Din($colorWhite,24px,700);
+          }
+        }
+      }
+    }
+  }//groupe
+  
+  .info {
+    &-header {
+      height: 100px;
+      &__title {
+        max-width: 163px;
+        margin-left: 32px;
+        h2 {
+          @include Din($colorBlue,16px,700);
+        }
+      }
+    }
+    &-main {
+      position: relative;
+      height: 235px;
+      background-color: $colorBlue;
+      &__img {
+        position: absolute;
+        top: -15%;
+        margin: 0 32px;
+        img {
+          max-width: 212px;
+          height: 119px;
+        }
+      }
+      &__content {
+        margin-bottom: 32px;
+        padding-top: 103px;
+        margin-left: 32px;
+      }
+      .infoMessage {
+        p {
+          @include Yugo($colorWhite,16px,700);
+        }
+      }
+      .infoArrow {
+        margin-right: 32px;
+        p {
+          @include Yugo($colorWhite,16px,700);
+          text-align: right;
+        }
+      }
+    }
+  }//info
+  
+  .recluite {
+    height: 394px;
+    margin-top: 32px;
+    &__title h2{
+      @include Din($colorBlue,16px,700);
+      margin: 64px 0 32px 32px;
+    }
+
+    &-img {
+      max-width: 359px;
+      height: 208px;
+      margin-left: auto;
+      margin-right: 0px;  
+      position: relative;
+    }
+    .container {
+      max-width: 281px;
+      height: 100px;
+      background-color: $colorWhite;
+      position: absolute;
+      left: auto;
+      right: 0;
+      border: 2px solid $colorBlack;
+    }
+    
+    .glide {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    
+    .glide__arrows {
+      display: flex;;
+      margin: 43.5px 30px 36px 16px;
+    }
+    .glide__arrow1 {
+      margin-right: 40px;
+    }
+    .view {
+      margin-top: 26px;
+      &__text {
+        @include Yugo($colorBlack,16px,700);
+        white-space: normal;
+        // margin-top: 26px;
+      }
+      &__text2 {
+        display: none;
+      }
+      &__text3 {
+        display: none;
+      }
+      &__text4 {
+        @include Yugo($colorBlack,12px,700);
+      }
+      &__number {
+        @include Yugo($colorBlue,24px,700);
+        margin-right: 16px;
+      }
+      &__number3 {
+        @include Yugo($colorBlue,24px,700);
+      }
+      &__more {
+        max-width: 119px;
+        height: 30px;
+        background-color: $colorBlue;
+        margin-left: 32px;
+        margin-right: 16px;
+        margin-bottom: 6px;
+        text-align: center;
+        p {
+          @include Din($colorWhite,16px,700);
+          line-height: 30px;
+        }
+      }
+    }
+  }//recluite
+  
+  .contact {
+    height: 402px;
+    background-color: #EDEDED;
+    &__title {
+      margin: 32px auto;
+      max-width: 166px;
+    }
+  
+    &__title h2{
+      @include Din($colorBlue,16px,700);
+      padding-top: 32px;
+    }
+  
+    &__main {
+      max-width: 240px;
+      margin: 0 auto;
+      line-height: 65px;
+    }
+    &__main p {
+      @include Yugo($colorBlack,16px,700);
+      letter-spacing: 0;
+      margin-bottom: 24px;
+    }
+  
+    &__tel {
+      max-width: 240px;
+      margin: 0 auto 28px;
+    }
+    &__tel p:first-child{
+      @include Yugo($colorBlue,24px,700);
+      margin-bottom: 16px;
+    }
+  
+    &__tel p:nth-child(2){
+      @include Yugo($colorBlack,16px,700);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  
+    &__tel p:last-child{
+      @include Yugo($colorBlack,16px,700);
+      text-align: center;
+    }
+  
+    &__form {
+      max-width: 200px;
+      height: 45px;
+      margin: 0 auto;
+      background-color: #72F4E4;
+      border-radius: 40px;
+      text-align: center;
+      line-height: 40px;
+      &__group {
+        text-align: center;
+        span {
+          @include Yugo($colorWhite,12px,700);
+          margin: 0px 0 10px 4px;
+          display: inline-block;
+        }
+        a {
+          @include Yugo($colorWhite,12px,700);
+          margin: 0px 0 10px 4px;
+          display: inline-block;
+        }
+      }
+    }
+  }//contact
+
+}//main
+
+.footer {
+  height: 370px;
+  background-color: $colorBlue;
+  &-inner{
+    display: inline-block;
+    max-width: 224px;
+    margin: 32px 119px 24px 32px;
+    img {
+      width: 65px;
+      height: 63px;
+    }
+    &__address {
+      max-width: 224px;
+      height: 40px;
+      .footer-company {
+        @include Yugo($colorWhite,12px,700);
+      }
+      .footer-address {
+        @include Yugo($colorWhite,12px,700);
+        letter-spacing: 0;
+      }
+    }
+  }
+  &-group {
+    display: flex;
+    justify-content: space-between;
+    max-width: 291px;
+    margin: 0 auto 64px;
+    .footerItem1 {
+      @include Yugo($colorWhite,14px,700);
+        li {
+          padding-bottom: 12px;
+        }
+
+    }
+    .footerItem2 {
+      @include Yugo($colorWhite,14px,700);
+      li {
+        padding-bottom: 12px;
+      }
+    }
+    .footerItem3 {
+      @include Yugo($colorWhite,14px,700);
+    }
+  }
+}//footer
+
+//------------------スマホレスポンシブ  対応-----------------------------*
+
+
+//------------------ヘッダーハンバーガメニューレスポンシブ  対応------------*
+
+@media screen and(min-width: 375px) and (max-width: 1279px) {
+  header {
+    .nav {
+      position: relative;
+      .humburgerMenu {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        cursor: pointer;
+        z-index: 2;
+        .buns,.patty {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 5px;
+      }
+      }
+      .link {
+        position: fixed;
+        background-color: #aaa;
+        height: 100vh;
+        width: 100%;
+        // flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(10px at 90% -10%);
+        transition: all 1s ease-in-out;
+      }
+      .open {
+        clip-path: circle(1300px at 90% -10%);
+        -webkit-clip-path: circle(1300px at 90% -10%);
+      }
+    }
+  }
+}//
+
+//------------------ヘッダーハンバーガメニューレスポンシブ  対応------------*
+
+
+
+
+
+
+//------------------タブレットレスポンシブ 対応--------------------------*
+@media screen and(min-width: 768px) {
+
+  header {
+    .nav {
+      height: 60px;
+      &__icon {
+        margin-left: 32px;
+        .icon {
+          width: 63px;
+          height: 60px;
+        }
+      }
+    }
+  }//header
+
+  main {
+    .mainVisual {
+      position: relative;
+      .swiper-container{
+        height: 80%;
+        position: relative;
+        .swiper-wrapper {
+          .swiper-slide {
+            margin-bottom: -10px;
+          }
+          .swiper-slide > img{
+            height: 819px;
+          }
+        }//swiper-wrapper
+        .main-text {
+          margin-left: 82px;
+          margin-bottom: 282px;
+        }
+      }//swiper-container
+      .news {
+        width: calc(100% - 30%);
+        height: 220px;
+        padding: 32px 32px 32px 64px;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 90%;
+        right: 0;
+        z-index: 1;
+        &__title {
+  
+          &-top {
+            max-width: 123px;
+            margin-bottom: 23px;
+            p {
+              @include Din($colorWhite,16,700)
+            }
+          } 
+          &-content {
+            max-width: 307px;
+            display: inline;
+            span {
+              @include Din($colorGrayd,12px,700);
+              padding-right: 16px;
+            }
+            a { 
+              @include Yugo($colorWhite,16px,700);
+              white-space: nowrap;
+            }
+          }
+          &-content a:nth-child(2) {
+            white-space: nowrap;
+          }
+    
+        }
+        &__view {
+          width: 30%;
+          margin-top: 110px;
+          a {
+            @include Din($colorBlue,16px,700);
+            line-height: 40px;
+          }
+        }
+        .newsContent1 {
+          margin-bottom: 24px;
+        }
+
+        .newsContent2 {
+          white-space: nowrap;
+        }
+        .newsText {
+          max-width: 140px;
+          height: 40px;
+          background-color: $colorWhite;
+        }
+      }
+    }//mainVisual
+
+
+    .services {
+      // margin-top: 90px;
+      height: 532px;
+      &__top {
+        margin: 0 64px;
+        margin-top: 150px;
+        height: 216px;
+        &__title {
+          max-width: 289px;
+          margin-bottom: 32px;
+        }
+        &__title h2 {
+          @include Din($colorBlue,24px,700);
+        }
+        &__explanation {
+          margin-left: 0;
+          max-width: 344px;
+        }
+        &__explanation p:last-child {
+          word-break: keep-all;
+        }
+      }
+      &__content {
+        height: 255px;
+        display: flex;
+        flex-direction: row-reverse;
+        &__img {
+          .bridge {
+            max-width: 278px;
+            max-height: 156px;
+            position: static;
+            margin: 48px 89px 51px 0;
+          }
+        }
+        &__text {
+          padding-top: 0;
+          @include Yugo($colorWhite,16px,1000);
+          max-width: 304px;
+          margin: 32px 25px 32px 0px;
+        }
+        &__text p:first-child {
+          @include Din($colorWhite,16px,1000);
+          padding: 0;
+          margin-bottom: 24px;
+        }
+        &__text p:last-child {
+          @include Din($colorWhite,16px,1000);
+          padding: 0;
+        }
+      }
+      &-img img {
+        display: none;
+      }
+    }//services
+
+    .group {
+      height: 407px;
+      position: relative;
+      &__name {
+        margin-left: 64px;
+        margin-bottom: 32px;
+        max-width: 311px;
+      }
+      &__name h2 {
+        padding: 0;
+        @include Din($colorBlue,24px,700);
+      }
+    
+      &__messages {
+        display: flex;
+      }
+      &__message1 {
+      display: inline-block;
+      margin-bottom: 48px;
+      }
+
+      &__message1 p {
+        margin: 0 0 0 64px;
+      }
+    
+      &__message2 {
+        margin: 0 64px 0 24px;
+        max-width: 304px;
+      }
+      &__message2 p {
+        @include Yugo($colorBlack,16px,0);
+      }
+
+      &__image {
+        flex-wrap: nowrap;
+        margin: 0;
+        &__civil {
+          max-width: 212px;
+          margin-right: 16px;
+          margin-left: 64px;
+          height: 105px;
+          .civil {
+            height: 105px;
+          }
+        }
+
+        &__bridge {
+          background-color: $colorBlue;
+          display: inline-block; 
+          position: relative;
+          max-width: 212px;
+          margin-right: 16px;
+          margin-top: 0;
+          height: 105px;
+          .bridge {
+            height: 105px;
+          }
+        }
+      
+        &__load {
+          background-color: $colorBlue;
+          display: inline-block; 
+          position: relative;
+          max-width: 212px;
+          margin-right: 16px;
+          margin-top: 0;
+          height: 105px;
+          .load {
+            height: 105px;
+          }
+        }
+    
+        &__dum {
+          background-color: $colorBlue;
+          display: inline-block; 
+          position: relative;
+          max-width: 212px;
+          margin: 0;
+          margin-right: 64px;
+          height: 105px;
+          .dum {
+            height: 105px;
+          }
+        }
+      }
+      .backBorder {
+        background-color: #cccccc;
+        height: 49px;
+        width: 100%;
+        position: absolute;
+        top: 62%;
+        z-index: -1;
+      }
+    }//groupe
+  
+    .info {
+      &-header {
+        height: 100px;
+        &__title {
+          max-width: 237px;
+          margin-left: 32px;
+          h2 {
+            @include Din($colorBlue,24px,700);
+          }
+        }
+      }
+      &-main {
+        height: 166px;
+        padding: 0 64px;
+        &__img {
+          display: flex;
+          top: -19%;
+          margin: 0 43px 0 27px;
+          img {
+            max-width: 266px;
+            height: 149px;
+          }
+        }
+        &__content {
+          margin-bottom: 32px;
+          padding-top: 40px;
+          margin-left: 320px;
+        }
+        .infoMessage {
+          p {
+            @include Yugo($colorWhite,16px,1000);
+            
+          }
+        }
+        
+        .infoArrow {
+          p {
+            @include Yugo($colorWhite,16px,700);
+            letter-spacing: 0;
+          }
+        }
+      }
+    }//imfo
+
+    .recluite {
+      height: 620px;
+      &__title h2{
+        max-width: 201px;
+        margin-left: 64px;
+        @include Din($colorBlue,24px,700);
+      }
+  
+      &-img {
+        max-width: 704px;
+        height: 408px;
+        img {
+          height: 408px;
+        }
+      }
+      .container {
+        max-width: 544px;
+        height: 106px;
+        margin-left: 224px;
+        margin-top: -40px;
+      }
+      
+      .glide {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .glide__arrows {
+        display: flex;;
+        margin-right: 76.3px;
+      }
+      .glide__arrow1 {
+        margin-right: 32px;
+      }
+      .glide__slide {
+        display: flex;
+        margin-top: 0;
+        .view {
+          margin-top: 20px;
+          width: 207px;
+          &__text {
+            @include Yugo($colorBlack,16px,700);
+            white-space: nowrap;
+          }
+  
+          &__text2 {
+            @include Yugo($colorBlack,12px,700);
+            display: block;
+          }
+          &__text3 {
+            @include Yugo($colorBlack,12px,700);
+            display: block;
+          }
+          &__number {
+            @include Yugo($colorBlue,24px,700);
+            margin-right: 16px;
+          }
+        }
+        .view__more {
+          margin: 58px 64px 14px 6px;
+          text-align: center;
+          p {
+            @include Din($colorWhite,16px,700);
+            line-height: 30px;
+            display: inline;
+            padding: 0 12px 0 12px;
+          }
+        }
+      }
+    }//recluite
+
+    .contact {
+      height: 349px;
+      // display: flex;
+      // justify-content: center;
+      // padding: 0 64px;
+      .contactMain {
+        max-width: 768px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        &-group1 {
+          margin-top: 62px;
+          width: 50%;
+        }
+  
+        .contact__title {
+          margin: 0 0 32px 0;
+          max-width: 242px;
+          h2{
+            @include Din($colorBlue,24px,700);
+            padding-top: 0;
+          }
+        }
+
+        .contact__main {
+          max-width: 320px;
+          margin-left: 0;
+          p {
+            @include Yugo($colorBlack,16px,700);
+            margin-bottom: 0;
+            letter-spacing: 0;
+            line-height: 27px;
+          }
+        }
+        &-group2 {
+          width: 50%;
+          margin: 0 30px;
+          margin-top: 95px;
+          .contact__tel {
+            max-width: 213px;
+            margin: 0 auto;
+          }
+          .contact__tel p:first-child{
+            @include Yugo($colorBlue,24px,0);
+            white-space: nowrap;
+          }
+          .contact__form {
+            margin: 0 auto;
+            margin-top: 32px;
+            margin-bottom: 62px;
+          }
+        }
+      }
+    }//contact
+  }//main
+
+  .footer {
+    height: 353px;
+    display: flex;
+    justify-content: center;
+    &-inner{
+      margin: 0;
+      margin-top: 64px;
+      img {
+        margin-bottom: 32px;
+      }
+      &__address {
+        max-width: 224px;
+        height: 40px;
+        .footer-company {
+          @include Yugo($colorWhite,12px,700);
+        }
+        .footer-address {
+          @include Yugo($colorWhite,12px,700);
+          letter-spacing: 0;
+        }
+      }
+    }
+    &-group {
+      margin: 0;
+      margin-top: 161px;
+      margin-left: 62px;
+      .footerItem1 {
+        @include Yugo($colorWhite,14px,700);
+        margin-right: 50px;
+        li {
+          line-height: 16px;
+          
+        }
+        ul {
+          letter-spacing: 0;
+        }
+      }
+      .footerItem2 {
+        margin-right: 50px;
+        white-space: nowrap;
+        li {
+          line-height: 16px;
+        }
+        ul {
+          letter-spacing: 0;
+        }
+      }
+      .footerItem3 {
+        // margin-right: 64px;
+        li {
+          line-height: 16px;
+        }
+        span {
+          letter-spacing: 0;
+        }
+      }
+    }
+  }//footer
+}//------------------タブレットレスポンシブ 対応--------------------------*
+
+
+
+
+
+
+//------------------PCレスポンシブ 対応--------------------------*
+@media screen and(min-width: 1280px){
+
+  header {
+    .nav {
+      // max-width: 1280px;
+      // margin: 0 auto;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      &__icon {
+        display: inline-block;
+        margin-left: 16px;
+        .icon {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .manu-header-container {
+        width: 50%;
+        .link {
+          margin-left: auto;
+          z-index: auto;
+          background-color: #8B96B6;
+          padding-top: 20px;
+          li a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  
+  main {
+    .mainVisual {
+      .swiper-container{
+        height: 80%;
+        position: relative;
+        .swiper-wrapper {
+          .swiper-slide {
+            margin-bottom: -10px;
+          }
+          .swiper-slide > img{
+            height: 980px;
+          }
+        }//swiper-wrapper
+        .main-text {
+          margin-top: 377px;
+          margin-left: 116px;
+          max-width: 405px;
+          object-fit: cover;
+        }
+      }//swiper-container
+      .news {
+        width: calc(100% - 50%);
+        height: 212px;
+        padding: 48px 48px 37px 48px;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 88%;
+        right: 0;
+        z-index: 1;
+        &__title {
+  
+          &-top {
+            max-width: 177px;
+            margin-bottom: 23px;
+            p {
+              @include Din($colorWhite,24px,700)
+            }
+          } 
+          &-content {
+            max-width: 307px;
+            display: inline;
+            span {
+              @include Din($colorGrayd,12px,700);
+              padding-right: 16px;
+            }
+            a { 
+              @include Yugo($colorWhite,16px,700);
+              white-space: nowrap;
+            }
+          }
+          &-content a:nth-child(2) {
+            white-space: nowrap;
+          }
+    
+        }
+        &__view {
+          width: 30%;
+          margin-left: 17px;
+          margin-top: 87px;
+          a {
+            @include Din($colorBlue,16px,700);
+            line-height: 40px;
+          }
+        }
+        .newsContent1 {
+          margin-bottom: 14px;
+        }
+        .newsText {
+          max-width: 140px;
+          height: 40px;
+          background-color: $colorWhite;
+        }
+      }
+    }//mainVisual
+
+    .services {
+      margin-top: 165px;
+      &__top {
+        height: 261px;
+        margin: 0;
+        &__title {
+          max-width: 381px;
+          height: 32px;
+          margin: 0;
+        }
+        &__title h2 {
+          @include Din($colorBlue,32px,700);
+          margin: 0;
+          padding: 0;
+        }
+        &__explanation {
+          margin-top: 64px;
+          margin-left: 0;
+          max-width: 624px;
+          height: 212px;
+
+        }
+        &__explanation p:first-child {
+          @include Yugo($colorBlack,48px,700);
+          word-break: keep-all;
+          max-width: 624px;
+        }
+        &__explanation p:last-child {
+          @include Yugo($colorWhite,48px,700);
+          max-width: 624px;
+          overflow-wrap: break-word;
+          z-index: 1;
+          position: absolute;
+        }
+      }
+      &__content {
+        margin-top: -100px;
+        height: 469px;
+        position: relative;
+        justify-content: space-evenly;
+        align-items: center;
+        &__img {
+          margin-right: 0;
+          margin-left: auto;
+          .bridge {
+            max-width: 528px;
+            max-height: 296px;
+            margin: 0;
+          }
+        }
+        &__text {
+          max-width: 624px;
+          height: 203px;
+          margin-top: 120px;
+          @include Yugo
+        }
+        &__text p:first-child {
+          padding: 0;
+          @include Yugo($colorWhite,24px,1000);
+          letter-spacing: 0;
+        }
+        &__text p:last-child {
+          padding: 0 ;
+          @include Yugo($colorWhite,24px,1000);
+        }
+      }
+    }//services
+
+    .services-img {
+  
+      img {
+        display: block;
+        width: 100%;
+        height: 660px;
+      }
+    }
+
+    .group {
+      padding-top: 96px;
+      height: 798px;
+      background-color: $colorGray;
+      &__name {
+        margin-left: 0;
+        max-width: 409px;
+      }
+      &__name h2 {
+        padding-bottom: 0;
+        @include Din($colorBlue,32px,700);
+      }
+    
+      &__messages {
+        margin-top: 64px;
+        margin-left: 0;
+        display: flex;
+      }
+      &__message1 {
+      display: inline-block;
+      }
+
+      &__message1 p {
+        max-width: 624px;
+        height: 212px;
+        margin: 0;
+        @include Yugo($colorBlack,48px,700);
+      }
+    
+      &__message2 {
+        margin-left: 64px;
+        max-width: 527px;
+        height: 106px;
+        display: inline-block;
+      }
+    
+      &__message2 p {
+        @include Yugo($colorBlack,24px,0);
+    
+      }
+    
+      &__image {
+        margin: 0;
+        &__civil {
+          margin: 0;
+          max-width: 25%;
+          height: 228px;
+          .civil {
+            height: 228px;
+            &__text {
+              @include Din($colorWhite,48px,700);
+            }
+          }
+          
+        }
+        
+        &__bridge {
+          margin-right: 0;
+          max-width: 25%;
+          height: 228px;
+          .bridge {
+            height: 228px;
+            &__text {
+              @include Din($colorWhite,48px,700);
+            }
+          }
+        }
+      
+        &__load {
+          margin: 0;
+          max-width: 25%;
+          height: 228px;
+          .load {
+            height: 228px;
+            &__text {
+              @include Din($colorWhite,48px,700);
+            }
+          }
+        }
+    
+        &__dum {
+          max-width: 25%;
+          margin: 0;
+          height: 228px;
+        }
+        .dum {
+          height: 228px;
+          &__text {
+            @include Din($colorWhite,48px,700);
+          }
+        }
+      }
+    }//groupe
+
+    .info {
+      height: 357px;
+      &-header {
+        height: 259px;
+        &__title {
+          max-width: 320px;
+          margin-left: 0;
+          margin-top: 64px;
+          h2 {
+            @include Din($colorBlue,32px,700);
+          }
+        }
+      }
+      &-main {
+        height: 293px;
+        &__img {
+          position: absolute;
+          top: -36%;
+          left: 64px;
+          margin: 0;
+          img {
+            max-width: 504px;
+            height: 282px;
+            margin-right: 147px;
+          }
+        }
+        &__content {
+          margin-bottom: 32px;
+          padding-top: 44px;
+          margin-left: 654px;
+          max-width: 500px;
+        }
+        .infoMessage {
+          // max-width: 480px;
+          p {
+            @include Yugo($colorWhite,32px,1000);
+            letter-spacing: 0;
+          }
+        }
+        .infoArrow {
+          // left: 147%;
+          // top: 104%;
+          margin: 0;
+          // max-width: 256px;
+          p {
+            @include Yugo($colorWhite,32px,700);
+            letter-spacing: 0;
+          }
+        }
+      }
+    }//imfo
+
+    .recluite {
+      height: 950px;
+      margin-top: 300px;
+
+      &__title h2{
+        @include Din($colorBlue,32px,700);
+        margin: 0;
+        max-width: 263px;
+        margin-bottom: 64px;
+      }
+  
+      &-img {
+        max-width: 1120px;
+
+        img {
+
+          height: 649px;
+        }
+      }
+      .container {
+        max-width: 640px;
+        height: 158px;
+        margin-left: 640px;
+        margin-top: 170px;
+      }
+      
+      .glide {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .glide__arrows {
+        margin: 68px 72px 69px 48px;
+      }
+
+      .glide__arrow1 {
+        margin-right: 40px;
+      }
+      .glide__slide {
+        display: flex;
+        .view {
+          margin-top: 26px;
+          width: 207px;
+          &__number {
+            @include Yugo($colorBlue,40px,700);
+            margin-right: 16px;
+          }
+          &__text {
+            @include Yugo($colorBlack,32px,700);
+            white-space: nowrap;
+          }
+      
+          &__text2 {
+            @include Yugo($colorBlack,16px,0);
+            max-width: 236px;
+            white-space: nowrap;
+          }
+          &__text3 {
+            @include Yugo($colorBlack,16px,0);
+            max-width: 236px;
+            white-space: nowrap;
+          }
+        }
+        .view__more {
+          margin: 76px 64px 14px 110px;
+          max-width: 119px;
+          height: 34px;
+          p {
+            @include Din($colorWhite,16px,700);
+            line-height: 30px;
+            display: inline;
+            padding: 0 12px 0 12px;
+          }
+        }
+      }
+    }//recluite
+
+    .contact {
+      height: 469px;
+      // display: flex;
+      // justify-content: center;
+      // padding: 0 64px;
+      .contactMain {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        &-group1 {
+          margin-top: 64px;
+          width: 50%;
+        }
+  
+        .contact__title {
+          margin-bottom: 80px;
+          max-width: 318px;
+          h2{
+            @include Din($colorBlue,32px,700);
+            padding-top: 0;
+          }
+        }
+
+        .contact__main {
+          max-width: 503px;
+          margin-left: 67px;
+          p {
+            @include Yugo($colorBlack,24px,700);
+            margin-bottom: 0;
+            letter-spacing: 0;
+          }
+        }
+        &-group2 {
+          width: 50%;
+          margin: 0;
+          .contact__tel {
+            max-width: 285px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 180px;
+          }
+          .contact__tel p:first-child{
+            @include Yugo($colorBlue,32px,0);
+            white-space: nowrap;
+          }
+          .contact__tel p:nth-child(2){
+            @include Yugo($colorBlack,24px,0);
+          }
+          .contact__tel p:last-child{
+            @include Yugo($colorBlack,24px,0);
+          }
+
+          .contact__form {
+            margin-top: 32px;
+            height: 60px;
+            max-width: 280px;
+            &__group {
+              line-height: 60px;
+              span {
+                @include Yugo($colorWhite,12px,700);
+                margin: 0px 0 10px 4px;
+                display: inline-block;
+              }
+              a {
+                @include Yugo($colorWhite,16px,700);
+                margin: 0px 0 10px 4px;
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }//contact
+  }//main
+
+  .footer {
+    height: 404px;
+    &-inner{
+      margin-top: 35px;
+      margin-right: 198px;
+      // max-width: 448px;
+      max-width: 50%;
+      img {
+        margin-bottom: 40px;
+        width: 101px;
+        height: 98px;
+      }
+      &__address {
+        max-width: 448px;
+        height: 64px;
+        .footer-company {
+          @include Yugo($colorWhite,24px,700);
+        }
+        .footer-address {
+          @include Yugo($colorWhite,24px,700);
+          letter-spacing: 0;
+        }
+      }
+    }
+    &-group {
+      margin: 0;
+      margin-top: 161px;
+      max-width: 50%;
+      .footerItem1{
+        @include Yugo($colorWhite,14px,700);
+      }
+      .foo
+      .footerItem2 {
+        margin-right: 52px;
+        white-space: nowrap;
+      }
+      .footerItem3 {
+        margin-right: 64px;
+        span {
+          letter-spacing: 0;
+        }
+      }
+    }
+  }//footer
+}
+//------------------PCレスポンシブ 対応--------------------------*
+

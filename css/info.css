@@ -1,0 +1,1879 @@
+@charset "UTF-8";
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans CJK JP", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+a:hover {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  opacity: 0.6;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+main .infoMain {
+  width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  position: relative;
+}
+
+main .infoMain-img img {
+  height: 240px;
+}
+
+main .infoMain-text {
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+main .infoMain-text p {
+  color: #FAFAFA;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .infoMain-about {
+  height: 65px;
+}
+
+main .infoNav {
+  color: #080808;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+  max-width: 311px;
+  margin: 0 auto;
+  height: 65px;
+  padding: 24px 0;
+}
+
+main .infoNav a {
+  color: #080808;
+  font-size: 12px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .aboutGroup .company {
+  height: 630px;
+  width: 375px;
+  margin: 0 auto;
+}
+
+main .aboutGroup .company-about {
+  max-width: 311px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+main .aboutGroup .company-about h2 {
+  display: inline-block;
+  position: relative;
+  color: #080808;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .company-about h2:before {
+  content: '';
+  position: absolute;
+  left: 2%;
+  bottom: 0px;
+  /*下線の上下位置調整*/
+  display: inline-block;
+  width: 20px;
+  /*下線の幅*/
+  height: 2px;
+  /*下線の太さ*/
+  background-color: #286BC1;
+  /*下線の色*/
+}
+
+main .aboutGroup .company-name {
+  max-width: 311px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .aboutGroup .company-name h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .company-name p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .company-year {
+  max-width: 311px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .aboutGroup .company-year h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .company-year p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .company-many {
+  max-width: 311px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .aboutGroup .company-many h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .company-many p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .company-president {
+  max-width: 311px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .aboutGroup .company-president h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .company-president p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .company-employee {
+  max-width: 311px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 24px;
+}
+
+main .aboutGroup .company-employee h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .company-employee p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location {
+  height: 500px;
+}
+
+main .aboutGroup .location-title {
+  max-width: 313px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-title h2 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-head {
+  max-width: 313px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+main .aboutGroup .location-head h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-head p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+  white-space: nowrap;
+}
+
+main .aboutGroup .location-groupTitle {
+  max-width: 313px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+main .aboutGroup .location-groupTitle h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-groupTitle p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-group1 {
+  max-width: 313px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+main .aboutGroup .location-group1 h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-group1 p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-group2 {
+  max-width: 313px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+main .aboutGroup .location-group2 h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-group2 p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-group3 {
+  max-width: 313px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+main .aboutGroup .location-group3 h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-group3 p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-group4 {
+  max-width: 313px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+main .aboutGroup .location-group4 h3 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-group4 p {
+  margin: 8px 0 16px 0;
+  color: #080808;
+  font-size: 16px;
+  font-weight: 1000;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .aboutGroup .location-map {
+  height: 340px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+main .aboutGroup .location-map .map {
+  position: relative;
+  padding-bottom: 75%;
+  width: 100%;
+}
+
+main .aboutGroup .location-map .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main .message {
+  height: 815px;
+}
+
+main .message-ttl {
+  margin: 32px 0 24px 32px;
+}
+
+main .message-ttl h2 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 24px;
+  color: #080808;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .message-ttl h2:before {
+  content: '';
+  position: absolute;
+  left: 1%;
+  bottom: -9%;
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #286BC1;
+}
+
+main .message-ttl .messageImg {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: 32px;
+  margin-bottom: 24px;
+}
+
+main .message-ttl .messageImg img {
+  width: 100%;
+}
+
+main .message-main {
+  max-width: 307px;
+  margin: 0 auto;
+  letter-spacing: 0;
+}
+
+main .message-main2 {
+  margin-top: 24px;
+}
+
+main .message-main3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+main .message-president {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .message-president h2 {
+  color: #080808;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .message-president p {
+  margin-top: 16px;
+  margin-bottom: 23px;
+  color: #080808;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+}
+
+main .hamaHistory .history {
+  height: 883px;
+}
+
+main .hamaHistory .history-ttl {
+  margin-top: 64px;
+  margin-left: 32px;
+}
+
+main .hamaHistory .history-ttl h2 {
+  color: #080808;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: noto-sans-cjk-jp;
+  display: inline-block;
+  position: relative;
+}
+
+main .hamaHistory .history-ttl h2:before {
+  content: '';
+  position: absolute;
+  left: 1%;
+  bottom: -9%;
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #286BC1;
+}
+
+main .hamaHistory .history-1980 {
+  max-width: 311px;
+  margin: 0 auto;
+  margin-top: 54px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .hamaHistory .history-1980 span {
+  color: #CCCCCC;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+  max-width: 92px;
+}
+
+main .hamaHistory .history-1980 p {
+  letter-spacing: 0;
+  margin-bottom: 32px;
+}
+
+main .hamaHistory .history-1989 {
+  max-width: 311px;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .hamaHistory .history-1989 span {
+  color: #CCCCCC;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .hamaHistory .history-1989 p {
+  letter-spacing: 0;
+  margin-bottom: 32px;
+}
+
+main .hamaHistory .history-2000 {
+  max-width: 311px;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .hamaHistory .history-2000 span {
+  color: #CCCCCC;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .hamaHistory .history-2000 p {
+  letter-spacing: 0;
+  margin-bottom: 32px;
+}
+
+main .hamaHistory .history-2014 {
+  max-width: 311px;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+main .hamaHistory .history-2014 span {
+  color: #CCCCCC;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: 'DIN Alternate', dinosaur, sans-serif;
+}
+
+main .hamaHistory .history-2014 p {
+  letter-spacing: 0;
+  margin-bottom: 32px;
+}
+
+main .hamaHistory .history-img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main .infoMain {
+    width: 100%;
+    height: 432px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    position: relative;
+  }
+  main .infoMain-img img {
+    height: 432px;
+  }
+  main .infoMain-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  main .infoMain-text p {
+    color: #FAFAFA;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .infoMain-about {
+    height: 65px;
+  }
+  main .infoNav {
+    color: #080808;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    max-width: 311px;
+    margin-right: auto;
+    margin-left: 64px;
+    height: 65px;
+    padding: 24px 0;
+  }
+  main .infoNav a {
+    color: #080808;
+    font-size: 12px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .aboutGroup {
+    height: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+  main .aboutGroup .company {
+    height: 560px;
+    width: 375px;
+    margin: 0;
+  }
+  main .aboutGroup .company-top {
+    color: #080808;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    max-width: 311px;
+    margin: 0 auto;
+    height: 65px;
+    padding: 24px 0;
+  }
+  main .aboutGroup .company-top a {
+    color: #080808;
+    font-size: 12px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .aboutGroup .company-about {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+  main .aboutGroup .company-about h2 {
+    display: inline-block;
+    position: relative;
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-about h2:before {
+    content: '';
+    position: absolute;
+    left: 2%;
+    bottom: 0px;
+    /*下線の上下位置調整*/
+    display: inline-block;
+    width: 20px;
+    /*下線の幅*/
+    height: 2px;
+    /*下線の太さ*/
+    background-color: #286BC1;
+    /*下線の色*/
+  }
+  main .aboutGroup .company-name {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .aboutGroup .company-name h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-name p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-year {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .aboutGroup .company-year h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-year p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-many {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .aboutGroup .company-many h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-many p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-president {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .aboutGroup .company-president h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-president p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-employee {
+    max-width: 311px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 24px;
+  }
+  main .aboutGroup .company-employee h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-employee p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location {
+    height: 500px;
+    margin-top: 99px;
+  }
+  main .aboutGroup .location-title {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-title h2 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-head {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  main .aboutGroup .location-head h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-head p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+    white-space: nowrap;
+  }
+  main .aboutGroup .location-groupTitle {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  main .aboutGroup .location-groupTitle h2 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-groupTitle p {
+    margin: 8px 0 0 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group1 {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+  main .aboutGroup .location-group1 h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group1 p {
+    margin: 8px 0 0 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group2 {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  main .aboutGroup .location-group2 h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group2 p {
+    margin: 8px 0 0 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group3 {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  main .aboutGroup .location-group3 h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group3 p {
+    margin: 8px 0 0 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group4 {
+    max-width: 313px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .aboutGroup .location-group4 h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group4 p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-map {
+    width: 443px;
+    height: 295px;
+  }
+  main .aboutGroup .location-map .map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+  }
+  main .aboutGroup .location-map .map iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  main .message {
+    height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 64px;
+  }
+  main .message-ttl {
+    margin: 0;
+  }
+  main .message-ttl h2 {
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+    margin-bottom: 32px;
+    display: inline-block;
+    position: relative;
+  }
+  main .message-ttl h2:before {
+    content: '';
+    position: absolute;
+    left: 1%;
+    bottom: -9%;
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #286BC1;
+  }
+  main .message-ttl .messageImg {
+    max-width: 279px;
+    margin: 0;
+  }
+  main .message-ttl .messageImg img {
+    width: 100%;
+  }
+  main .message-main {
+    max-width: 307px;
+    margin: 0;
+    margin-top: 60px;
+    letter-spacing: 0;
+  }
+  main .message-main2 {
+    margin-top: 24px;
+  }
+  main .message-main3 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  main .message-president {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .message-president h2 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .message-president p {
+    margin-top: 16px;
+    margin-bottom: 23px;
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .hamaHistory .history {
+    height: 890px;
+  }
+  main .hamaHistory .history-ttl {
+    margin-top: 64px;
+    margin-left: 32px;
+  }
+  main .hamaHistory .history-ttl h2 {
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+    display: inline-block;
+    position: relative;
+  }
+  main .hamaHistory .history-ttl h2:before {
+    content: '';
+    position: absolute;
+    left: 1%;
+    bottom: -9%;
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #286BC1;
+  }
+  main .hamaHistory .history-1980 {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-top: 54px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .hamaHistory .history-1980 span {
+    color: #CCCCCC;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    max-width: 92px;
+  }
+  main .hamaHistory .history-1980 p {
+    letter-spacing: 0;
+    margin-bottom: 32px;
+  }
+  main .hamaHistory .history-1989 {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-top: 32px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .hamaHistory .history-1989 span {
+    color: #CCCCCC;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .hamaHistory .history-1989 p {
+    letter-spacing: 0;
+    margin-bottom: 32px;
+  }
+  main .hamaHistory .history-2000 {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-top: 32px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .hamaHistory .history-2000 span {
+    color: #CCCCCC;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .hamaHistory .history-2000 p {
+    letter-spacing: 0;
+    margin-bottom: 32px;
+  }
+  main .hamaHistory .history-2014 {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-top: 32px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .hamaHistory .history-2014 span {
+    color: #CCCCCC;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .hamaHistory .history-2014 p {
+    letter-spacing: 0;
+    margin-bottom: 32px;
+  }
+  main .hamaHistory .history-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main .infoMain {
+    width: 100%;
+    height: 1080px;
+  }
+  main .infoMain-img img {
+    height: 1080px;
+  }
+  main .infoMain-text {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  main .infoMain-text p {
+    color: #FAFAFA;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .infoMain-about {
+    height: 65px;
+  }
+  main .infoNav {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    max-width: 315px;
+    margin-right: auto;
+    margin-left: 32px;
+    height: 65px;
+    padding: 24px 0;
+  }
+  main .infoNav a {
+    color: #080808;
+    font-size: 12px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .aboutGroup {
+    height: 706px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 32px;
+    margin-bottom: 63px;
+  }
+  main .aboutGroup .company {
+    height: 630px;
+    width: calc(100% / 3);
+    margin: 0;
+  }
+  main .aboutGroup .company-top {
+    color: #080808;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    max-width: 311px;
+    margin: 0 auto;
+    height: 65px;
+    padding: 24px 0;
+  }
+  main .aboutGroup .company-top a {
+    color: #080808;
+    font-size: 12px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .aboutGroup .company-about {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    margin-top: 64px;
+  }
+  main .aboutGroup .company-about h2 {
+    display: inline-block;
+    position: relative;
+    color: #080808;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-about h2:before {
+    content: '';
+    position: absolute;
+    left: 1%;
+    bottom: -9%;
+    display: inline-block;
+    width: 40px;
+    /*下線の幅*/
+    height: 2px;
+    /*下線の太さ*/
+    background-color: #286BC1;
+    /*下線の色*/
+  }
+  main .aboutGroup .company-name {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .aboutGroup .company-name h3 {
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-name p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-year {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .aboutGroup .company-year h3 {
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-year p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-many {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .aboutGroup .company-many h3 {
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-many p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-president {
+    max-width: 311px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .aboutGroup .company-president h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-president p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-employee {
+    max-width: 311px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 24px;
+  }
+  main .aboutGroup .company-employee h3 {
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .company-employee p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location {
+    height: 500px;
+    margin-top: 167px;
+    width: calc(100% / 3);
+  }
+  main .aboutGroup .location-title {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-title h2 {
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-head {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  main .aboutGroup .location-head h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-head p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+    white-space: nowrap;
+  }
+  main .aboutGroup .location-groupTitle {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  main .aboutGroup .location-groupTitle h2 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-groupTitle p {
+    margin: 8px 0 0 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group1 {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+  main .aboutGroup .location-group1 h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group1 p {
+    margin: 8px 0 0 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group2 {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  main .aboutGroup .location-group2 h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group2 p {
+    margin: 8px 0 0 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group3 {
+    max-width: 313px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  main .aboutGroup .location-group3 h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group3 p {
+    margin: 8px 0 0 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group4 {
+    max-width: 313px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  main .aboutGroup .location-group4 h3 {
+    color: #080808;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-group4 p {
+    margin: 8px 0 16px 0;
+    color: #080808;
+    font-size: 16px;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .aboutGroup .location-map {
+    margin-top: 169px;
+    width: calc(100% / 3);
+  }
+  main .aboutGroup .location-map .map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    max-width: 443px;
+  }
+  main .aboutGroup .location-map .map iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  main .message {
+    height: 628px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 32px;
+  }
+  main .message-ttl {
+    margin: 0;
+  }
+  main .message-ttl h2 {
+    color: #080808;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+    margin-bottom: 64px;
+    display: inline-block;
+    position: relative;
+  }
+  main .message-ttl h2:before {
+    content: '';
+    position: absolute;
+    left: 1%;
+    bottom: -9%;
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #286BC1;
+  }
+  main .message-ttl .messageImg {
+    max-width: 471px;
+    margin: 0;
+  }
+  main .message-ttl .messageImg img {
+    width: 100%;
+  }
+  main .message-main {
+    max-width: 594px;
+    margin: 0;
+    margin-top: 124px;
+    letter-spacing: 0;
+  }
+  main .message-main2 {
+    margin-top: 32px;
+  }
+  main .message-main3 {
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+  main .message-president {
+    border-bottom: none;
+  }
+  main .message-president h2 {
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .message-president p {
+    margin-top: 32px;
+    margin-bottom: 23px;
+    color: #080808;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .hamaHistory {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 32px;
+    height: 1032px;
+  }
+  main .hamaHistory .history {
+    height: 967px;
+  }
+  main .hamaHistory .history-ttl {
+    margin-top: 24px;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  main .hamaHistory .history-ttl h2 {
+    display: inline-block;
+    position: relative;
+    color: #080808;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: noto-sans-cjk-jp;
+  }
+  main .hamaHistory .history-ttl h2:before {
+    content: '';
+    position: absolute;
+    left: 1%;
+    bottom: -9%;
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #286BC1;
+  }
+  main .hamaHistory .history-1980 {
+    max-width: 608px;
+    margin: 0;
+    margin-bottom: 64px;
+  }
+  main .hamaHistory .history-1980 span {
+    color: #CCCCCC;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+    max-width: 92px;
+  }
+  main .hamaHistory .history-1980 p {
+    letter-spacing: 0;
+    margin-bottom: 32px;
+    margin-top: 24px;
+  }
+  main .hamaHistory .history-1989 {
+    max-width: 608px;
+    margin: 0;
+    margin-bottom: 64px;
+  }
+  main .hamaHistory .history-1989 span {
+    color: #CCCCCC;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .hamaHistory .history-1989 p {
+    letter-spacing: 0;
+    margin-bottom: 32px;
+    margin-top: 24px;
+  }
+  main .hamaHistory .history-2000 {
+    max-width: 608px;
+    margin: 0;
+    margin-bottom: 64px;
+  }
+  main .hamaHistory .history-2000 span {
+    color: #CCCCCC;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .hamaHistory .history-2000 p {
+    letter-spacing: 0;
+    margin-bottom: 32px;
+    margin-top: 24px;
+    white-space: nowrap;
+  }
+  main .hamaHistory .history-2014 {
+    max-width: 608px;
+    margin: 0;
+  }
+  main .hamaHistory .history-2014 span {
+    color: #CCCCCC;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: 'DIN Alternate', dinosaur, sans-serif;
+  }
+  main .hamaHistory .history-2014 p {
+    letter-spacing: 0;
+    margin-bottom: 32px;
+    margin-top: 24px;
+  }
+  main .hamaHistory .history-img {
+    display: block;
+    max-width: 542px;
+    height: 413px;
+    margin: auto 0;
+    margin-left: 64px;
+  }
+  main .hamaHistory .history-img img {
+    max-width: 542px;
+    height: 413px;
+  }
+}
+/*# sourceMappingURL=info.css.map */
